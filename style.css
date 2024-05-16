@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 24px;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* --------------------------------------------------- */
+
+.beispiel-01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beispiel-01 > img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* --------------------------------------------------- */
+
+.beispiel-02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beispiel-02 > ul {
+  width: 100%;
+  padding: 24px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.beispiel-02 > ul > li:last-child {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .beispiel-02 > ul {
+    flex-direction: column;
+  }
+
+  .beispiel-02 > ul > li:last-child {
+    margin-left: unset;
+  }
+}
+
+/* --------------------------------------------------- */
+
+.beispiel-03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beispiel-03 > .card {
+  width: 100%;
+  max-width: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.beispiel-03 > .card img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.beispiel-03 > .card p {
+  text-align: center;
+}
+
+.beispiel-03 > .card a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: rebeccapurple;
+  color: white;
+  border-radius: 4px;
+}
+
+/* --------------------------------------------------- */
+
+.beispiel-04 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.beispiel-04 > .card {
+  width: 33%;
+  max-width: 400px;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.beispiel-04 > .card img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.beispiel-04 > .card p {
+  text-align: center;
+}
+
+.beispiel-04 > .card a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: rebeccapurple;
+  color: white;
+  border-radius: 4px;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .beispiel-04 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beispiel-04 > .card {
+    width: 100%;
+  }
+}
